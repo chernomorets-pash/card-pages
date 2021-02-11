@@ -8,8 +8,7 @@ body {
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +19,24 @@ body {
 }
 
 
+.main-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    max-width: 960px;
+    flex-direction: column;
+}
+
 
 .content-grid {
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 700px;
+    /* min-width: fit-content;
+    height: fit-content; */
     background-color: rgba(64, 64, 64, 0.79);
     border-radius: 20px;
 
@@ -70,15 +81,6 @@ header {
     justify-content: space-evenly;
 }
 
-.main-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: fit-content;
-    min-width: fit-content;
-}
-
 
 .homework-card {
     padding: 15px;
@@ -90,6 +92,7 @@ header {
     background-color: rgba(0, 0, 0, 0.564);
     border-radius: 20px;
     margin: 10px;
+    box-shadow: 5px 5px 15px 5px #0000007d;
 
 }
 
@@ -99,5 +102,16 @@ header {
 
 .link-homework img {
     width: 5rem;
+
+}
+
+@media (min-width: 900px) {
+    .main-cards {
+        flex-direction: row;
+    }
+
+    .icon-part img {
+        padding: 10px;
+    }
 
 }
