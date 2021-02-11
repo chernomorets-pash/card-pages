@@ -75,6 +75,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: fit-content;
+    min-width: fit-content;
 }
 
 
@@ -83,7 +85,7 @@ header {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    min-width: 500px;
+    min-width: fit-content;
     max-width: 500px;
     background-color: rgba(0, 0, 0, 0.564);
     border-radius: 20px;
